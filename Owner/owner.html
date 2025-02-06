@@ -138,7 +138,7 @@
               
               <section class="highlights">
                 
-                <article class="highlights__item">
+                <!-- <article class="highlights__item">
                   
                   <img src="/./Pic/user.jpg" alt="Profile Picture" class="highlights__img" />
                     <div class="highlights__text">
@@ -184,12 +184,12 @@
                   </div>
                   
                   
-                </article>
+                </article> -->
                 
               </section>
               
               <section class="overview">
-                <h3 class="heading-3">Overview</h3>
+                <h3 class="heading-3">Rent Recieved</h3>
                 
                 <article class="overview__item">
                   
@@ -208,7 +208,7 @@
                 <main class="div-table__main">
                   
                   
-                  <article class="div-table__row">
+                  <!-- <article class="div-table__row">
                     <img src="/./Pic/user.jpg" alt="Profile Picture" class="div-table__img" />
                     <div class="div-table__text">
                       <p class="div-table__text--primary div-table__text--left">Rajesh Kumar</p>
@@ -272,9 +272,27 @@
                     <div class="div-table__actions">
                       <i class="material-icons">more_vert</i>
                     </div>
-                  </article>
+                  </article> -->
                   
                 </main>
+
+                <!-- Popup Card -->
+                <div id="tenant-popup" class="popup-card">
+                  <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h3>Tenant Details</h3>
+                    <div class="tenant-details">
+                      <p><strong>Name:</strong> <span id="popup-name"></span></p>
+                      <p><strong>Phone:</strong> <span id="popup-phone"></span></p>
+                      <p><strong>Address:</strong> <span id="popup-address"></span></p>
+                      <p><strong>Verified:</strong> <span id="popup-verified"></span></p>
+                      <p><strong>Last Rent Paid Date:</strong> <span id="popup-last-rent-paid"></span></p>
+                      <p><strong>Move-In Date:</strong> <span id="popup-move-in"></span></p>
+                      <p><strong>Payment Due Date:</strong> <span id="popup-due-date"></span></p>
+                      <p><strong>Status:</strong> <span id="popup-status"></span></p>
+                    </div>
+                  </div>
+                </div>
                 
               </section>
               
@@ -282,5 +300,7 @@
             
           </div>
       </section>
+
+      <script type="text/javascript" src="owner.js"></script>
 </body>
 </html>
