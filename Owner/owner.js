@@ -67,22 +67,24 @@ tenants.forEach((tenant) => {
   const highlightItem = document.createElement("article");
   highlightItem.className = "highlights__item";
   highlightItem.innerHTML = `
-    <img src="${tenant.image}" alt="Profile Picture" class="highlights__img" />
-    <div class="highlights__text">
-      <p class="highlights__text--primary">${tenant.name}</p>
-      <p class="highlights__text--secondary">${tenant.address}</p>
-    </div>
-    <div class="highlights__text">
-      <p class="highlights__text--primary ${
-        tenant.status === "Due"
-          ? "commons__orange"
-          : tenant.status === "Paid"
-          ? "commons__green"
-          : "commons__red"
-      }">${tenant.status}</p>
-      <p class="highlights__text--secondary">Rent</p>
-    </div>
-  `;
+      <img src="${
+        tenant.image
+      }" alt="Profile Picture" class="highlights__img" />
+      <div class="highlights__text">
+        <p class="highlights__text--primary">${tenant.name}</p>
+        <p class="highlights__text--secondary">${tenant.address}</p>
+      </div>
+      <div class="highlights__text">
+        <p class="highlights__text--primary ${
+          tenant.status === "Due"
+            ? "commons__orange"
+            : tenant.status === "Paid"
+            ? "commons__green"
+            : "commons__red"
+        }">${tenant.status}</p>
+        <p class="highlights__text--secondary">Rent</p>
+      </div>
+    `;
   highlightsSection.appendChild(highlightItem);
 });
 
@@ -92,31 +94,31 @@ tenants.forEach((tenant) => {
   const tableRow = document.createElement("article");
   tableRow.className = "div-table__row";
   tableRow.innerHTML = `
-    <img src="${tenant.image}" alt="Profile Picture" class="div-table__img" />
-    <div class="div-table__text">
-      <p class="div-table__text--primary div-table__text--left">${
-        tenant.name
-      }</p>
-      <p class="div-table__text--secondary div-table__text--left">${
-        tenant.address
-      }</p>
-    </div>
-    <div class="div-table__text">
-      <p class="div-table__text--primary div-table__text--center">${
-        tenant.phone
-      }</p>
-      <p class="div-table__text--secondary div-table__text--center">Phone number</p>
-    </div>
-    <div class="div-table__text">
-      <p class="div-table__text--primary div-table__text--center ${
-        tenant.status === "Paid" ? "commons__green" : "commons__red"
-      }">${tenant.status}</p>
-      <p class="div-table__text--secondary div-table__text--center">Rent</p>
-    </div>
-    <div class="div-table__actions">
-      <i class="material-icons">more_vert</i>
-    </div>
-  `;
+      <img src="${tenant.image}" alt="Profile Picture" class="div-table__img" />
+      <div class="div-table__text">
+        <p class="div-table__text--primary div-table__text--left">${
+          tenant.name
+        }</p>
+        <p class="div-table__text--secondary div-table__text--left">${
+          tenant.address
+        }</p>
+      </div>
+      <div class="div-table__text">
+        <p class="div-table__text--primary div-table__text--center">${
+          tenant.phone
+        }</p>
+        <p class="div-table__text--secondary div-table__text--center">Phone number</p>
+      </div>
+      <div class="div-table__text">
+        <p class="div-table__text--primary div-table__text--center ${
+          tenant.status === "Paid" ? "commons__green" : "commons__red"
+        }">${tenant.status}</p>
+        <p class="div-table__text--secondary div-table__text--center">Rent</p>
+      </div>
+      <div class="div-table__actions">
+        <i class="material-icons">more_vert</i>
+      </div>
+    `;
   tableSection.appendChild(tableRow);
 });
 
